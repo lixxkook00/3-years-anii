@@ -14,7 +14,7 @@ const arrayImg = ['1.JPG', '2.JPG', '3.JPG', '4.JPG',
     '5.JPG', '6.JPG', '7.JPG', '8.JPG', '9.JPG', '10.jpg'
 ]
 
-const countDownDate = new Date("Sep 3, 2021 00:00:00").getTime();
+const countDownDate = new Date("Sep 2, 2021 17:17:00").getTime();
 
 formatTime = (number) => {
         return number < 10 ? `0${number}` : number;
