@@ -53,13 +53,14 @@
         }
         .body {
             padding: 10px 20px;
-            margin: 0 20px 40px;
+            margin: 0 auto 40px;
             background-color: #F7E3E4;
             color: #F6ABAB;
             font-size: 1.8rem;
             height: 500px;
             overflow: auto;
             border-radius: 10px;
+            width: 700px;
             // display: none;
         }
         .body::-webkit-scrollbar {

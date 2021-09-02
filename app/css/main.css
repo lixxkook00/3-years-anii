@@ -20,6 +20,14 @@ body {
   display: none !important;
 }
 
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
 /* Mobile Only */
 @media (max-width: 739px) {
   .hidden-m {
@@ -30,6 +38,11 @@ body {
   }
   .title {
     font-size: 2.2rem !important;
+  }
+  .body {
+    padding: 10px 20px;
+    margin: 0 10px 40px;
+    width: 95vw !important;
   }
 }
 
@@ -94,13 +107,14 @@ body {
 
 .app__container .body {
   padding: 10px 20px;
-  margin: 0 20px 40px;
+  margin: 0 auto 40px;
   background-color: #F7E3E4;
   color: #F6ABAB;
   font-size: 1.8rem;
   height: 500px;
   overflow: auto;
   border-radius: 10px;
+  width: 700px;
 }
 
 .app__container .body::-webkit-scrollbar {

@@ -14,7 +14,7 @@ const arrayImg = ['1.JPG', '2.JPG', '3.JPG', '4.JPG',
     '5.JPG', '6.JPG', '7.JPG', '8.JPG', '9.JPG', '10.jpg'
 ]
 
-const countDownDate = new Date("Sep 2, 2021 17:17:00").getTime();
+const countDownDate = new Date("Sep 2, 2021 18:20:00").getTime();
 
 formatTime = (number) => {
         return number < 10 ? `0${number}` : number;
@@ -47,7 +47,6 @@ let indexSlide = 0;
 
 showImg = (index) => {
     img.src = `./app/img/${index}`
-    console.log(`./app/img/${index}`)
 }
 
 
@@ -59,6 +58,7 @@ btnPrevs.onclick = function() {
         indexSlide = indexSlide - 1
     }
     showImg(arrayImg[indexSlide])
+    clearInterval(randomSlide);
 }
 btnNext.onclick = function() {
     if (indexSlide >= arrayImg.length - 1) {
@@ -67,7 +67,15 @@ btnNext.onclick = function() {
         indexSlide = indexSlide + 1
     }
     showImg(arrayImg[indexSlide])
+    clearInterval(randomSlide);
 }
+
+// interval Silder
+const randomSlide = setInterval(function() {
+    let randomNumber = Math.floor(Math.random() * 10);
+    showImg(arrayImg[randomNumber])
+
+}, 2000);
 
 // Mail
 let stateMail = false;
@@ -79,4 +87,5 @@ btnMail.onclick = () => {
         mail.classList.add('close');
         stateMail = false;
     }
+    window.scrollTo(0, document.body.scrollHeight);
 }
