@@ -1,0 +1,135 @@
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.close {
+  display: none !important;
+}
+
+/* Mobile Only */
+@media (max-width: 739px) {
+  .hidden-m {
+    display: none;
+  }
+  .times {
+    font-size: 8rem !important;
+  }
+  .title {
+    font-size: 2.2rem !important;
+  }
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://previews.123rf.com/images/amaomam/amaomam1911/amaomam191100022/134468120-cute-dragon-seamless-background-repeating-pattern-wallpaper-background-cute-seamless-pattern-backgro.jpg");
+  background-repeat: repeat;
+  background-size: 300px;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.app__timer {
+  display: flex;
+  flex-direction: column;
+}
+
+.app__container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.app__container-slide {
+  position: relative;
+  margin: 20px auto;
+  height: 400px;
+  padding: 20px;
+  background-color: rgba(210, 232, 246, 0.4);
+}
+
+.app__container-slide-control {
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  right: -15px;
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.app__container img {
+  height: 100%;
+}
+
+.app__container .button {
+  margin: 10px auto;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  background-color: #F7E3E4;
+  color: #F6ABAB;
+  border-radius: 20px;
+}
+
+.app__container .button-item {
+  padding: 0 20px;
+}
+
+.app__container .body {
+  padding: 10px 20px;
+  margin: 0 20px 40px;
+  background-color: #F7E3E4;
+  color: #F6ABAB;
+  font-size: 1.8rem;
+  height: 500px;
+  overflow: auto;
+  border-radius: 10px;
+}
+
+.app__container .body::-webkit-scrollbar {
+  display: none;
+}
+
+.times {
+  display: flex;
+  font-size: 15rem;
+  margin: 150px auto;
+  color: #628DAA;
+  background-color: rgba(210, 232, 246, 0.4);
+  border-radius: 20px;
+}
+
+.times__item {
+  padding: 0 8px;
+}
+
+.title {
+  margin: 30px auto 0;
+  padding: 0 40px;
+  font-size: 2.2rem;
+  background-color: #F7E3E4;
+  color: #F6ABAB;
+  border-radius: 20px;
+}
+
+.title div {
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

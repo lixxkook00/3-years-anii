@@ -1,0 +1,13 @@
+/* Mobile Only */
+
+@media (max-width: 739px) {
+    .hidden-m {
+        display: none;
+    }
+    .times {
+        font-size: 8rem !important;
+    }
+    .title {
+        font-size: 2.2rem !important;
+    }
+}
